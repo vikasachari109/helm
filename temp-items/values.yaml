@@ -1,0 +1,12 @@
+# Virtual service name
+serviceName: nginx-svc
+
+# Service namespace
+namespaceName: temp-mpv
+
+# gateway name
+gatewayName: default-api-gateway
+
+# prefix
+
+prefixPath: /temp-mpv/nginx/

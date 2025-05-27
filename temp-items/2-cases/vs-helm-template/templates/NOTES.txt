@@ -1,0 +1,3 @@
+*** Created/updated the virtual service in kubernetes default namespace ***
+*** change the name and Run below command is see the changes ***
+*** kubectl get virtualservice <virtual-service-name> -n default -o yaml *** 

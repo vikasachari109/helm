@@ -1,0 +1,25 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: temp-mpv-nginx-helm-svc-vs
+  namespace: default
+spec:
+  gateways:
+  - default-web-gateway
+  hosts:
+  - '*'
+  http:
+  - match:
+    - uri:
+        prefix: /temp-mpv/nginx-helm/
+    rewrite:
+      uri: /
+    route:
+    - destination:
+        host: my-nginx.temp-mpv.svc.cluster.local
+        port:
+          number: 80
+      headers:
+        request:
+          add:
+            x-forwarded-prefix: /temp-mpv/nginx-helm/

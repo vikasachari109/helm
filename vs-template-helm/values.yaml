@@ -1,0 +1,5 @@
+serviceName: temp-mvp-helm
+
+gatewayName: default-api-gateway
+
+prefixPath: /temp-mpv/nginx/
