@@ -1,4 +1,0 @@
-serviceName: temp-mpv-nginx-helm-01
-prefixPath: /temp-mpv/nginx-01/
-gatewayName: default-api-gateway
-namespaceName: temp-mpv-02
